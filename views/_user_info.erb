@@ -1,0 +1,11 @@
+<%# if the user info is empty put in the dummy sidebar to impress the UI team %>
+<% if @user_info.empty? %>
+  <img src="http://placekitten.com/g/200/300" />
+  <h3>Dummy User</h3>
+  <p>
+    <strong><i class="fa fa-envelope"></i> Email</strong>
+    <a href="mailto:dummyemail@email.com">dummyemail@email.com</a>
+  </p>
+<% else %>
+  <%# implement your own code to pull in a user's profile data here %>
+<% end %>
